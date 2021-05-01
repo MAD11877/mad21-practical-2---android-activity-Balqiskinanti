@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    boolean isFollowed = false;
     private final static String TAG = "Main Activity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
                 if(user.isFollowed()) {
                     user.setFollowed(false);
                     followBtn.setText("Follow");
-                    Log.v(TAG,"following..");
+                    //Log.v(TAG,"following..");
                 }
                 else{
                     user.setFollowed(true);
                     followBtn.setText("Unfollow");
-                    Log.v(TAG,"unfollowing..");
+                    //Log.v(TAG,"unfollowing..");
                 }
             }
         });
